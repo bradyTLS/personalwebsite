@@ -1,0 +1,175 @@
+
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+@font-face{
+    font-family: myFont;
+    src:url(Ballega.otf);
+}
+
+body{
+    background-color: grey;
+    font-family: myFont;
+}
+
+.wrap{
+    display: flex;
+    position: releative;
+
+}
+
+.wrap .sidebar{
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    background: rgb(100, 98, 98);
+    padding: 30px 0;
+}
+
+.wrap .sidebar h2{
+    color: fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrap .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(215, 215, 221, 0.05);
+}
+
+.wrap .sidebar ul li a{
+    color: #000000;
+    display: block;
+
+}
+
+.wrap .sidebar ul li a .fas{
+    width: 25px;
+
+}
+
+.wrap .sidebar ul li:hover{
+    background: orange;
+}
+
+.wrap .sidebar ul li a:hover{
+    color:wheat;
+}
+
+.wrap .main_content{
+    width: 100%;
+    margin-left: 200px;
+}
+
+.wrap .main_content .header{
+    padding: 20px;
+    color: #717171;
+    border-bottom: 1px solid #e0e;
+}
+
+h1{
+    color: blanchedalmond;
+    text-transform: uppercase;
+    margin: 10 10;
+    animation: animate 1.3s ease-in-out infinite
+            alternate;
+
+}
+
+@keyframes animate{
+    from{
+        text-shadow: 0 0 40px yellow;
+
+    }
+    to{
+        text-shadow: 0 0 50px yellow,
+                    0 0 10px yellow;
+    }
+}
+
+h2{
+    color: blanchedalmond;
+}
+
+
+
+
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.instagram {
+    width: 50px;
+    height: 50px;
+    
+
+}
+
+.bitcoin{
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+
+    /* 37sNUpK3RNEVwPENSw11TSrwqVFE5ehJg3 */
+    
+}
+
+.bitcoin:hover{
+    opacity: 0.6;
+    color: orange;
+}
+
+
+
+.column{
+    width: 0%;
+    padding: 50px;
+    display: inline-block;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.list1{
+    color:blanchedalmond;
+}
+
+
+.wrapper {
+    height: 200px;
+    width: 200px;
+    border-radius: 75%;
+    overflow: hidden;
+    border: 7px solid #fff;
+
+}
+
+.wrapper img{
+    height: 100%
+    width: 100%;
+    border-radius: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+
+.wrapper img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%)
+}
